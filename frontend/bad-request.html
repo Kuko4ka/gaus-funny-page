@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Request - TeamCV</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="site-logo" href="./members-list.html"><span class="site-logo__accent">Team</span>CV</a>
+        <a class="btn btn--dark" href="./add-member.html">
+            <svg class="icon" aria-hidden="true"><use href="./assets/svg/sprite.svg#icon-plus"></use></svg>
+            Add CV
+        </a>
+    </header>
+
+    <main class="error-page error-page--400">
+        <p class="error-page__code" aria-hidden="true">400</p>
+        <h1 class="error-page__title">
+            <svg class="icon" aria-hidden="true"><use href="./assets/svg/sprite.svg#icon-danger"></use></svg>
+            Bad Request
+        </h1>
+        <p class="error-page__text">Validation failed: Full Name cannot contain numbers.</p>
+        <a class="btn btn--dark" href="./add-member.html">
+            <svg class="icon" aria-hidden="true"><use href="./assets/svg/sprite.svg#icon-arrow-left"></use></svg>
+            Back to Form
+        </a>
+    </main>
+</body>
+</html>
