@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete CV - TeamCV</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+    <main class="modal-backdrop">
+        <form class="modal" role="alertdialog" aria-modal="true" aria-labelledby="delete-title" aria-describedby="delete-text"
+              action="./members-list.html" method="get" data-api="DELETE /api/members/1">
+            <div class="modal__icon" aria-hidden="true">
+                <svg class="icon"><use href="./assets/svg/sprite.svg#icon-trash"></use></svg>
+            </div>
+            <h1 class="modal__title" id="delete-title">Delete this CV?</h1>
+            <p class="modal__text" id="delete-text">Are you sure you want to permanently delete this member? This action cannot be undone.</p>
+            <div class="modal__actions">
+                <a class="btn btn--light" href="./profile.html">Cancel</a>
+                <button class="btn btn--danger" type="submit">Delete</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
