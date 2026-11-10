@@ -1,0 +1,210 @@
+/* ==========================================================================
+   pages.css — site header, buttons, error pages (400/404), delete modal
+   Requires css/styles.css (variables + reset) to be loaded first.
+   ========================================================================== */
+
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--dark);
+  background: var(--bg-main);
+  line-height: 1.5;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* ---------- Site header ---------- */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: var(--surface);
+  border-bottom: 2px solid var(--brand);
+}
+
+.site-logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.site-logo__accent {
+  color: var(--brand);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.2);
+  transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.btn--dark {
+  color: #fff;
+  background: var(--dark);
+}
+
+.btn--dark:hover {
+  background: #1e293b;
+}
+
+.btn--light {
+  color: var(--dark);
+  background: #f3f4f6;
+  box-shadow: none;
+}
+
+.btn--light:hover {
+  background: #e5e7eb;
+}
+
+.btn--danger {
+  color: #fff;
+  background: var(--danger);
+}
+
+.btn--danger:hover {
+  background: #b91c1c;
+}
+
+/* ---------- Error pages (400 / 404) ---------- */
+.error-page {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 24px 48px;
+  text-align: center;
+}
+
+.error-page__code {
+  margin: 0;
+  font-size: clamp(96px, 22vw, 160px);
+  font-weight: 800;
+  line-height: 1;
+  color: #dbeafe;
+}
+
+.error-page--400 .error-page__code {
+  color: #fee2e2;
+}
+
+.error-page__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 0 8px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.error-page__title .icon {
+  color: var(--brand);
+}
+
+.error-page--400 .error-page__title .icon {
+  color: #ef4444;
+}
+
+.error-page__text {
+  margin: 0 0 24px;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* ---------- Delete confirmation modal ---------- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.modal {
+  width: 100%;
+  max-width: 384px;
+  padding: 32px;
+  text-align: center;
+  background: var(--surface);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.3);
+}
+
+.modal__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  font-size: 22px;
+  color: var(--danger);
+  background: #fee2e2;
+  border-radius: 50%;
+}
+
+.modal__title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.modal__text {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.modal__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.modal__actions .btn {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .site-header {
+    padding: 12px 16px;
+  }
+
+  .modal {
+    padding: 24px;
+  }
+
+  .modal__actions {
+    flex-direction: column-reverse;
+  }
+
+  .error-page__title {
+    font-size: 26px;
+  }
+}
