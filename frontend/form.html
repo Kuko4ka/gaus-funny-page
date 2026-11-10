@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form.css">
+    <title>TeamCV Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container header-link">
+            <a href="./main_page.html" class="link logo"><span>Team</span>CV</a>
+            <a href="" class="link header-add-cv">
+                <svg width="12" height="14" class="icon-cv">
+                    <use href="./sprite.svg#icon-plus"></use>
+                </svg>
+                <span>Add CV</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div class="container form-container">
+
+                <form id="cv-form" class="form view-mode" action="">
+                    <div class="form-top">
+                        <a href="./main_page.html" class="link form-back-link">
+                            <svg width="12" height="14">
+                                <use href="./sprite.svg#icon-arrow-left"></use>
+                            </svg>
+                            <span>Back to Directory</span>
+                        </a>
+
+                        <div class="form-top-button-wrapper">
+                            <div class="view-controls">
+                                <button class="action-btn edit-btn" type="button" id="edit-btn">
+                                    <svg width="12" height="12" >
+                                        <use href="./sprite.svg#icon-edit"></use>
+                                    </svg>
+                                    <span>Edit</span>
+                                </button>
+                                <button class="action-btn" type="button">
+                                    <svg width="12" height="12" >
+                                        <use href="./sprite.svg#icon-pdf"></use>
+                                    </svg>
+                                    <span>Export PDF</span>
+                                </button>
+                                <button class="action-btn delete-btn" type="button">
+                                    <svg width="12" height="12" >
+                                        <use href="./sprite.svg#icon-trash"></use>
+                                    </svg>
+                                    <span>Delete</span>
+                                </button>
+                            </div>
+                            <div class="edit-controls">
+                                <button class="save-btn" type="submit" id="save-btn">
+                                    <svg width="12" height="14">
+                                        <use href="./sprite.svg#icon-save"></use>
+                                    </svg>
+                                    <span>Save Changes</span>
+                                </button>
+                                <button class="cancel-btn" type="button" id="cancel-btn">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-head-wrapper">
+                        <div class="avatar-wrapper">
+                            <img src="https://i.pravatar.cc/150?img=11" alt="Marcus Aris" class="avatar-img">
+                        </div>
+
+                        <div class="form-head-inputs-wrapper">
+                            <input type="text" id="name" name="name" class="form-name-input flex-item"
+                                placeholder="Full Name" value="Marcus Aris">
+
+                            <div class="select-wrapper flex-item">
+                                <select id="gender" name="gender" class="form-select">
+                                    <option value="" disabled hidden>Choose Gender</option>
+                                    <option value="male" selected>Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                                <select id="marital-status" name="marital-status" class="form-select">
+                                    <option value="" disabled hidden>Marital Status</option>
+                                    <option value="single" selected>Single</option>
+                                    <option value="married">Married</option>
+                                </select>
+                            </div>
+
+                            <div class="position-wrapper flex-item">
+                                <label for="position" class="form-head-label">Current Role</label>
+                                <input type="text" id="position" name="position" class="form-position-input"
+                                    placeholder="e.g. Frontend developer" value="Backend Engineer">
+                            </div>
+
+                            <div class="position-wrapper flex-item">
+                                <label for="location" class="form-head-label">Location</label>
+                                <input type="text" id="location" name="location" class="form-position-input"
+                                    placeholder="City, Country" value="10 Downing St, London">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-main-wrapper">
+                        <fieldset class="exp-and-lang fieldset">
+                            <legend class="visually-hidden">Experience and Languages</legend>
+
+                            <div class="section-wrapper">
+                                <div class="exp-title-wrapper mb-16">
+                                    <div class="exp-wrapper">
+                                        <svg width="12" height="12">
+                                            <use href="./sprite.svg#icon-briefcase"></use>
+                                        </svg>
+                                        <p>Work Experience</p>
+                                    </div>
+                                    <button type="button" class="add-position-btn togglable-btn">
+                                        <svg width="12" height="12">
+                                            <use href="./sprite.svg#icon-plus"></use>
+                                        </svg>
+                                        <span>Add Position</span>
+                                    </button>
+                                </div>
+
+                                <div class="experience-list">
+                                    <fieldset class="experience fieldset">
+                                        <div class="input-grid">
+                                            <div class="exp-item flex-item">
+                                                <label for="company-1" class="exp-label">COMPANY NAME</label>
+                                                <input type="text" id="company-1" class="exp-input w-100"
+                                                    value="CloudNet">
+                                            </div>
+                                            <div class="exp-item flex-item">
+                                                <label for="role-1" class="exp-label">ROLE / POSITION</label>
+                                                <input type="text" id="role-1" class="exp-input w-100"
+                                                    value="Backend Engineer">
+                                            </div>
+                                            <div class="exp-item flex-item">
+                                                <label for="start-1" class="exp-label">START DATE</label>
+                                                <input type="text" id="start-1" class="exp-input w-100"
+                                                    value="March 2023">
+                                            </div>
+                                            <div class="exp-item flex-item">
+                                                <label for="end-1" class="exp-label">END DATE</label>
+                                                <input type="text" id="end-1" class="exp-input w-100" value="Present">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+
+                                    <fieldset class="experience fieldset">
+                                        <div class="input-grid">
+                                            <div class="exp-item flex-item">
+                                                <label for="company-2" class="exp-label">COMPANY NAME</label>
+                                                <input type="text" id="company-2" class="exp-input w-100"
+                                                    value="TechCorp">
+                                            </div>
+                                            <div class="exp-item flex-item">
+                                                <label for="role-2" class="exp-label">ROLE / POSITION</label>
+                                                <input type="text" id="role-2" class="exp-input w-100"
+                                                    value="Junior Dev">
+                                            </div>
+                                            <div class="exp-item flex-item">
+                                                <label for="start-2" class="exp-label">START DATE</label>
+                                                <input type="text" id="start-2" class="exp-input w-100"
+                                                    value="Jan 2021">
+                                            </div>
+                                            <div class="exp-item flex-item">
+                                                <label for="end-2" class="exp-label">END DATE</label>
+                                                <input type="text" id="end-2" class="exp-input w-100" value="Feb 2023">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="languages-wrapper">
+                                <div class="lang-col flex-item">
+                                    <div class="exp-title-wrapper mb-16">
+                                        <div class="exp-wrapper">
+                                            <svg width="12" height="12">
+                                                <use href="./sprite.svg#icon-code"></use>
+                                            </svg>
+                                            <p>Programming Languages</p>
+                                        </div>
+                                        <button type="button" class="add-small-btn bg-blue-light togglable-btn">
+                                            <svg width="8" height="8">
+                                                <use href="./sprite.svg#icon-plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="lang-list">
+                                        <div class="lang-row-inputs">
+                                            <input type="text" class="exp-input flex-item" value="Python">
+                                            <input type="text" class="exp-input flex-item" value="Advanced">
+                                        </div>
+                                        <div class="lang-row-inputs">
+                                            <input type="text" class="exp-input flex-item" value="Go">
+                                            <input type="text" class="exp-input flex-item" value="Intermediate">
+                                        </div>
+                                        <div class="lang-row-inputs">
+                                            <input type="text" class="exp-input flex-item" value="SQL">
+                                            <input type="text" class="exp-input flex-item" value="Expert">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lang-col flex-item">
+                                    <div class="exp-title-wrapper mb-16">
+                                        <div class="exp-wrapper">
+                                            <svg width="12" height="12">
+                                                <use href="./sprite.svg#icon-globe"></use>
+                                            </svg>
+                                            <p>Foreign Languages</p>
+                                        </div>
+                                        <button type="button" class="add-small-btn bg-green-light togglable-btn">
+                                            <svg width="8" height="8">
+                                                <use href="./sprite.svg#icon-plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="lang-list">
+                                        <div class="lang-row-inputs">
+                                            <input type="text" class="exp-input flex-item" value="Spanish">
+                                            <input type="text" class="exp-input flex-item" value="B1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="interests-wrapper">
+                                <label class="sidebar-title mb-16">Scientific Interests</label>
+                                <input type="text" class="exp-input w-100" value="Distributed Systems, Cryptography">
+                            </div>
+                        </fieldset>
+
+                        <aside class="sidebar">
+                            <div class="sidebar-section">
+                                <div class="sidebar-header mb-16">
+                                    <h3 class="sidebar-title">Personal Details</h3>
+                                    
+                                </div>
+                                <div class="sidebar-row">
+                                    <label class="sidebar-label">Email:</label>
+                                    <input type="email" class="exp-input sidebar-input-wrapper"
+                                        value="m.aris@abstracted.loc">
+                                </div>
+                                <div class="sidebar-row">
+                                    <label class="sidebar-label">Phone:</label>
+                                    <input type="tel" class="exp-input sidebar-input-wrapper"
+                                        value="+44-7700-900077">
+                                </div>
+                                <div class="sidebar-row">
+                                    <label class="sidebar-label">DOB:</label>
+                                    <input type="text" class="exp-input sidebar-input-wrapper"
+                                        value="1992-05-14">
+                                </div>
+                            </div>
+
+                            <div class="sidebar-section experience">
+                                <div class="sidebar-header mb-16">
+                                    <h3 class="sidebar-title">Hardware Setup</h3>
+                                </div>
+                                <div class="sidebar-row">
+                                    <label class="sidebar-label w-auto">Weekly Hours:</label>
+                                    <div class="hours-wrapper">
+                                        <input type="text" class="exp-input hours-input" value="40">
+                                        <span class="hours-suffix">h</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-section">
+                                <div class="sidebar-header mb-16">
+                                    <h3 class="sidebar-title">Hobbies</h3>
+                                </div>
+                                <input type="text" class="exp-input w-100" value="Bouldering, Photography">
+                            </div>
+                        </aside>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+<script src="./js/script.js" defer></script>
+</body>
+
+</html>
