@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Directory</title>
+    <link rel="stylesheet" href="./css/main_page.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container header-link">
+            <a href="./main_page.html" class="link logo"><span>Team</span>CV</a>
+            <a href="./form.html" class="link header-add-cv">
+                <svg width="12" height="14" class="icon-cv" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Add CV</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="directory-header">
+        <div class="directory-title">
+            <h2>Team Directory</h2>
+            <p>Found: 10 members</p>
+        </div>
+
+        <div class="right-controls">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search name, role, company...">
+            </div>
+
+            <button class="filter">
+                Filters
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" class="filter-icon">
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="column-group">
+            <div class="filter-field">
+                <label for="tech-stack">TECH STACK</label>
+                <input type="text" id="tech-stack" placeholder="Any Technology">
+            </div>
+
+            <div class="filter-field">
+                <label for="foreign-language">FOREIGN LANGUAGES</label>
+                <input type="text" id="foreign-language" placeholder="Any Language">
+            </div>
+
+            <div class="filter-field">
+                <label for="interests">INTERESTS / DOMAINS</label>
+                <input type="text" id="interests" placeholder="Any Interest">
+            </div>
+        </div>
+
+        <div class="clear-filters">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <p>Clear Filters</p>
+        </div>
+
+        <div class="grid">
+            <a href="./form.html" class="card">
+                <img src="frontend/assets/src/marcus.jpg" alt="Marcus Aris" class="avatar">
+                <div class="card-info">
+                    <div class="card-name">Marcus Aris</div>
+                    <div class="card-role">Backend Engineer</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Go</span>
+                    <span class="tag">+1</span>
+                </div>
+            </a>
+
+            <a href="./form.html" class="card">
+                <img src="frontend/assets/src/sarah.jpg" alt="Sarah Jenkins" class="avatar">
+                <div class="card-info">
+                    <div class="card-name">Sarah Jenkins</div>
+                    <div class="card-role">Frontend Lead</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">+1</span>
+                </div>
+            </a>
+
+            <a href="./form.html" class="card">
+                <img src="frontend/assets/src/david.jpg" alt="David Chen" class="avatar">
+                <div class="card-info">
+                    <div class="card-name">David Chen</div>
+                    <div class="card-role">Fullstack Developer</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">+1</span>
+                </div>
+            </a>
+
+            <a href="./form.html" class="card">
+                <img src="frontend/assets/src/emily.jpg" alt="Emily Stone" class="avatar">
+                <div class="card-info">
+                    <div class="card-name">Emily Stone</div>
+                    <div class="card-role">UI/UX Designer</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">CSS</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">+1</span>
+                </div>
+            </a>
+
+            <a href="./form.html" class="card">
+                <img src="frontend/assets/src/alex.jpg" alt="Alex Volkov" class="avatar">
+                <div class="card-info">
+                    <div class="card-name">Alex Volkov</div>
+                    <div class="card-role">DevOps Engineer</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">+1</span>
+                </div>
+            </a>
+
+            <a href="./form.html" class="card">
+                <img src="frontend/assets/src/maria.jpg" alt="Maria Garcia" class="avatar">
+                <div class="card-info">
+                    <div class="card-name">Maria Garcia</div>
+                    <div class="card-role">Data Scientist</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">R</span>
+                    <span class="tag">+1</span>
+                </div>
+            </a>
+
+            <a href="./form.html" class="card">
+                <img src="frontend/assets/src/james.jpg" alt="James Smith" class="avatar">
+                <div class="card-info">
+                    <div class="card-name">James Smith</div>
+                    <div class="card-role">Mobile Developer</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Swift</span>
+                    <span class="tag">Kotlin</span>
+                </div>
+            </a>
+
+            <a href="./form.html" class="card">
+                <img src="frontend/assets/src/linda.jpg" alt="Linda Kim" class="avatar">
+                <div class="card-info">
+                    <div class="card-name">Linda Kim</div>
+                    <div class="card-role">QA Engineer</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Selenium</span>
+                    <span class="tag">+1</span>
+                </div>
+            </a>
+
+            <a href="./form.html" class="card">
+                <img src="frontend/assets/src/robert.jpg" alt="Robert Fox" class="avatar">
+                <div class="card-info">
+                    <div class="card-name">Robert Fox</div>
+                    <div class="card-role">Product Manager</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">SQL</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </a>
+
+            <a href="./form.html" class="card">
+                <img src="frontend/assets/src/sophia.jpg" alt="Sophia Martinez" class="avatar">
+                <div class="card-info">
+                    <div class="card-name">Sophia Martinez</div>
+                    <div class="card-role">Security Analyst</div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Bash</span>
+                    <span class="tag">+1</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
